@@ -27,7 +27,7 @@ const services = [
     icon: <Settings size={22} />,
     title: 'Sales Tax Setup & Filing',
     desc: 'Stay on top of your state sales tax obligations from start to finish. We manage account registration, tracking, return preparation, filing, and assist with notices or reporting discrepancies.',
-    price: 'Contact for pricing',
+    price: 'Starting at $50',
   },
 ]
 
