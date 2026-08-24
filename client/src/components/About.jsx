@@ -3,7 +3,7 @@ import './About.css'
 import georgeImg from '../assets/Headshot1.png'
 
 const highlights = [
-  '12 years in business with 71+ satisfied clients',
+  '12 years in business with 200+ satisfied clients',
   'Xero Certified & QuickBooks Advanced ProAdvisor',
   'H&R Block Certified with continuing tax education',
   'Background verified & BBB accredited',

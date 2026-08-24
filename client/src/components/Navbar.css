@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
+  padding: 0 48px;
   z-index: 200;
   transition: box-shadow 0.3s;
 }
@@ -18,14 +18,14 @@
 }
 
 .nav-logo img {
-  height: 120px;
+  height: 92px;
   object-fit: contain;
 }
 
 /* Desktop links */
 .nav-links {
   display: flex;
-  gap: 36px;
+  gap: 28px;
   list-style: none;
 }
 
@@ -142,7 +142,7 @@
 
 /* Show hamburger, hide desktop links on mobile */
 @media (max-width: 900px) {
-  .navbar { padding: 0 24px; }
+  .navbar { padding: 0 20px; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
 }

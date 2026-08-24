@@ -21,7 +21,7 @@ const slides = [
 
 const stats = [
   { target: 12, suffix: '+', label: 'Years in Business' },
-  { target: 71, suffix: '+', label: 'Clients Served' },
+  { target: 200, suffix: '+', label: 'Clients Served' },
   { target: 4.9, suffix: '★', label: 'Average Rating', decimal: true },
 ]
 
