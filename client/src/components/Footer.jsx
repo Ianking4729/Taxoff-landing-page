@@ -24,7 +24,7 @@ function Footer() {
         </div>
         <div className="footer-col">
           <h4>Company</h4>
-          <a href="#about">About George</a>
+          <a href="#about">About Taxoff</a>
           <a href="#certifications">Credentials</a>
           <a href="#testimonials">Reviews</a>
           <a href="#contact">Contact</a>
