@@ -7,7 +7,6 @@ import bbbLogo from '../assets/bbb.png'
 import toppro from '../assets/top-pro.png'
 
 const certs = [
-  { src: qbLogo, alt: 'QuickBooks', label: 'QuickBooks Advanced ProAdvisor', url: 'https://quickbooks.intuit.com/' },
   { src: xeroLogo, alt: 'Xero', label: 'Xero Certified Advisor', url: 'https://www.xero.com/' },
   { src: sageLogo, alt: 'Sage', label: 'Sage Intacct Partner', url: 'https://www.sageintacct.com/' },
   { src: bbbLogo, alt: 'BBB', label: 'BBB Accredited Business', url: 'https://www.bbb.org/us/nc/charlotte/profile/accounting/taxoff-llc-0473-92034603' },
