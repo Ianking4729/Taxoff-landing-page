@@ -8,7 +8,6 @@ import toppro from '../assets/top-pro.png'
 function TrustBar() {
   const logos = [
     { src: xeroLogo, alt: 'Xero Certified', url: 'https://www.xero.com/' },
-    { src: qbLogo, alt: 'QuickBooks Advanced ProAdvisor', url: 'https://quickbooks.intuit.com/' },
     { src: sageLogo, alt: 'Sage Intacct', url: 'https://www.sageintacct.com/' },
     { src: bbbLogo, alt: 'BBB Accredited', url: 'https://www.bbb.org/us/nc/charlotte/profile/accounting/taxoff-llc-0473-92034603' },
     { src: toppro, alt: 'Top ProAdvisor', url: 'https://www.thumbtack.com/nc/charlotte/accounting/taxoff/service/382472038009315338' },
