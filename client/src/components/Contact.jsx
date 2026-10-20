@@ -32,6 +32,7 @@ function Contact() {
     firstName: '',
     lastName: '',
     email: '',
+    phone: '',
     service: '',
     message: '',
   })
@@ -65,6 +66,7 @@ function Contact() {
     form.append("firstName", formData.firstName)
     form.append("lastName", formData.lastName)
     form.append("email", formData.email)
+    form.append("phone", formData.phone)
     form.append("service", formData.service)
     form.append("message", formData.message)
 
@@ -77,7 +79,7 @@ function Contact() {
 
       if (data.success) {
         setResult("Success! We'll be in touch soon.")
-        setFormData({ firstName: '', lastName: '', email: '', service: '', message: '' })
+        setFormData({ firstName: '', lastName: '', email: '', phone: '', service: '', message: '' })
         setTimeout(() => setResult(""), 3000)
       } else {
         setResult("Error sending message. Please try again.")
@@ -128,24 +130,33 @@ function Contact() {
               />
             </div>
             <div className="form-group">
-              <label>Last Name</label>
+              <label>Last Name (Optional)</label>
               <input
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={handleChange}
-                required
               />
             </div>
           </div>
           <div className="form-group">
-            <label>Email Address</label>
+            <label>Email Address (Optional)</label>
             <input
               type="email"
               name="email"
               placeholder="name@example.com"
               value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label>Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="(555) 555-5555"
+              value={formData.phone}
               onChange={handleChange}
               required
             />
