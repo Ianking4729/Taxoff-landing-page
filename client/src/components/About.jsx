@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './About.css'
 import { Cloud, FileSearch, Lightbulb } from 'lucide-react'
 
@@ -79,7 +80,7 @@ function About() {
             </li>
           ))}
         </ul>
-        <a href="#contact" className="btn-primary">Contact us</a>
+        <Link to="/contact" className="btn-primary">Contact us</Link>
       </div>
     </section>
   )

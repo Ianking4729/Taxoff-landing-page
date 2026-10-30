@@ -1,20 +1,27 @@
 import { useEffect, useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
+import { ChevronDown } from 'lucide-react'
 import './Navbar.css'
 import logoRect from '../assets/taxoff-logo-new.png'
 
 const TOPBAR_HEIGHT = 38
 
+const serviceLinks = [
+  { to: '/services/bookkeeping-accounting', label: 'Bookkeeping & Accounting' },
+  { to: '/services/tax-preparation', label: 'Tax Preparation' },
+]
+
 const links = [
-  { href: '#services', label: 'Services' },
-  { href: '#about', label: 'About' },
-  { href: '#certifications', label: 'Credentials' },
-  { href: '#testimonials', label: 'Reviews' },
+  { to: '/about', label: 'About' },
+  { to: '/#testimonials', label: 'Reviews' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [topbarVisible, setTopbarVisible] = useState(true)
+  const { pathname } = useLocation()
 
   useEffect(() => {
     const onScroll = () => {
@@ -22,6 +29,7 @@ function Navbar() {
       setScrolled(window.scrollY > 20)
       setTopbarVisible(!pastHero)
     }
+    onScroll()
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -32,9 +40,8 @@ function Navbar() {
     return () => window.removeEventListener('resize', onResize)
   }, [])
 
-  const handleLinkClick = () => setMenuOpen(false)
-
   const navTop = topbarVisible ? TOPBAR_HEIGHT : 0
+  const onServicesPage = pathname.startsWith('/services')
 
   return (
     <>
@@ -43,16 +50,34 @@ function Navbar() {
         style={{ top: `${navTop}px` }}
       >
         <div className="nav-logo">
-          <a href="#">
+          <Link to="/">
             <img src={logoRect} alt="Taxoff Logo" />
-          </a>
+          </Link>
         </div>
 
         <ul className="nav-links">
+          <li className="nav-dropdown">
+            <button
+              type="button"
+              className={`nav-dropdown-toggle ${onServicesPage ? 'active' : ''}`}
+              aria-haspopup="true"
+            >
+              Services <ChevronDown size={14} />
+            </button>
+            <ul className="nav-dropdown-menu">
+              {serviceLinks.map((l) => (
+                <li key={l.to}><NavLink to={l.to}>{l.label}</NavLink></li>
+              ))}
+            </ul>
+          </li>
           {links.map((l) => (
-            <li key={l.href}><a href={l.href}>{l.label}</a></li>
+            <li key={l.to}>
+              {l.to.includes('#')
+                ? <Link to={l.to}>{l.label}</Link>
+                : <NavLink to={l.to} end>{l.label}</NavLink>}
+            </li>
           ))}
-          <li><a href="#contact" className="nav-cta">Get Started</a></li>
+          <li><Link to="/contact" className="nav-cta">Get Started</Link></li>
         </ul>
 
         <button
@@ -72,15 +97,21 @@ function Navbar() {
         style={{ top: `${navTop + 80}px` }}
       >
         <ul>
+          <li className="mobile-group-label">Services</li>
+          {serviceLinks.map((l) => (
+            <li key={l.to} className="mobile-sub">
+              <Link to={l.to} onClick={() => setMenuOpen(false)}>{l.label}</Link>
+            </li>
+          ))}
           {links.map((l) => (
-            <li key={l.href}>
-              <a href={l.href} onClick={handleLinkClick}>{l.label}</a>
+            <li key={l.to}>
+              <Link to={l.to} onClick={() => setMenuOpen(false)}>{l.label}</Link>
             </li>
           ))}
           <li>
-            <a href="#contact" className="mobile-cta" onClick={handleLinkClick}>
+            <Link to="/contact" className="mobile-cta" onClick={() => setMenuOpen(false)}>
               Get Started
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

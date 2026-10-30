@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers config. "name" must match the Worker in the Cloudflare dashboard.
+  "name": "dads-landing-page",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./dist",
+    // Serve index.html for /about, /contact, /services/... so page refreshes don't 404
+    "not_found_handling": "single-page-application"
+  }
+}

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import './Services.css'
-import { BookOpen, FileText, Users, Settings } from 'lucide-react'
+import { BookOpen, FileText, Users, Settings, ArrowRight } from 'lucide-react'
 
 const services = [
   {
@@ -9,6 +10,7 @@ const services = [
     desc:
       "We take messy or neglected books and set them right, correcting transactions, reconciling accounts, and ironing out discrepancies until your financial records accurately tell the story of your business. If you're starting fresh, we build your accounting system the right way from the start: chart of accounts, workflows, opening balances, and essential records to support day-to-day operations. Our accounting services include Virtual Accounting, Outsourced Accounting, Monthly Bookkeeping, and Strategy & Advising to help you grow.",
     price: 'Prices start $200/mo',
+    link: '/services/bookkeeping-accounting',
   },
   {
     icon: <Users size={22} />,
@@ -16,18 +18,21 @@ const services = [
     desc:
       "From reconciliations and AP/AR to reporting and cash flow, we handle all your bookkeeping needs to keep your finances current and organized—freeing you up to concentrate on growing your company. If you're behind, we'll clean up months or years of backlog and deliver accurate, up-to-date financials. Virtual and remote bookkeeping, trusted local expertise, QuickBooks and Xero certified pros, and strategic advising to drive growth.",
     price: 'Starting at $200/mo',
+    link: '/services/bookkeeping-accounting',
   },
   {
     icon: <FileText size={22} />,
     title: 'Tax Preparation',
     desc: 'Personal and business tax returns filed accurately and on time, maximizing every deduction.',
     price: 'Starting at $200',
+    link: '/services/tax-preparation',
   },
   {
     icon: <Settings size={22} />,
     title: 'Sales Tax Setup & Filing',
     desc: 'Stay on top of your state sales tax obligations from start to finish. We manage account registration, tracking, return preparation, filing, and assist with notices or reporting discrepancies.',
     price: 'Starting at $50',
+    link: '/services/tax-preparation#sales-tax',
   },
 ]
 
@@ -70,6 +75,9 @@ function Services() {
             <h3>{s.title}</h3>
             <p>{s.desc}</p>
             <div className="service-price">{s.price}</div>
+            <Link to={s.link} className="service-link">
+              Learn more <ArrowRight size={14} />
+            </Link>
           </div>
         ))}
       </div>
