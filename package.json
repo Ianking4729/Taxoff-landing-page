@@ -1,0 +1,6 @@
+   {"name": "taxoff-website",
+     "private": true,
+     "scripts": {
+       "build": "npm --prefix client ci && npm --prefix client run build"
+     }
+   }
