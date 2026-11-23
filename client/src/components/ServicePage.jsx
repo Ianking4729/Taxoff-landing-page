@@ -9,7 +9,7 @@ import CtaBand from './CtaBand'
 function ServicePage({ data }) {
   return (
     <>
-      <Seo title={data.seoTitle} description={data.seoDescription} path={data.path} />
+      <Seo path={data.path} />
 
       <PageHeader
         label="Our Services"

@@ -3,11 +3,8 @@ import ServicePage from '../components/ServicePage'
 
 const data = {
   path: '/services/bookkeeping-accounting',
-  seoTitle: 'Bookkeeping & Accounting Services',
-  seoDescription:
-    'Monthly bookkeeping, catch-up and cleanup bookkeeping, and virtual accounting for small businesses. QuickBooks and Xero certified. Starting at $200/mo.',
   crumb: 'Bookkeeping & Accounting',
-  title: 'Bookkeeping & Accounting',
+  title: 'Virtual Bookkeeping Services for Small Businesses',
   sub:
     'Clean, current books every month, handled remotely by QuickBooks and Xero certified pros, so you can focus on running your business.',
   price: 'Starting at $200/mo',

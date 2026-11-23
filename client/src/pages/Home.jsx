@@ -10,10 +10,7 @@ import Contact from '../components/Contact'
 function Home() {
   return (
     <>
-      <Seo
-        description="Cloud-based accounting, bookkeeping and tax preparation for individuals and small businesses nationwide. Xero and QuickBooks certified. Free consultation."
-        path="/"
-      />
+      <Seo path="/" />
       <Hero />
       <TrustBar />
       <Services />

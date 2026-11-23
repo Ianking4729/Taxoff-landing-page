@@ -26,15 +26,11 @@ const credentials = [
 function AboutPage() {
   return (
     <>
-      <Seo
-        title="About Us"
-        description="Taxoff helps families and small businesses pay less in taxes with organized books and proactive tax strategy. 12+ years in business, 200+ clients, 100% remote."
-        path="/about"
-      />
+      <Seo path="/about" />
 
       <PageHeader
         label="About Us"
-        title="Tax and accounting help that's on your side"
+        title="Your QuickBooks Certified Bookkeeper in Charlotte NC"
         sub="For more than 12 years, Taxoff has helped families and small businesses across the country keep their books in order and keep more of what they earn."
         crumbs={[{ label: 'About' }]}
       >

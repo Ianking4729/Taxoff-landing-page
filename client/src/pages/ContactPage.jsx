@@ -31,15 +31,11 @@ const methods = [
 function ContactPage() {
   return (
     <>
-      <Seo
-        title="Contact Us"
-        description="Request a free consultation with Taxoff for bookkeeping, accounting or tax preparation. Call (704) 280-6683 or email tax-off@outlook.com."
-        path="/contact"
-      />
+      <Seo path="/contact" />
 
       <PageHeader
         label="Contact"
-        title="Let's talk about your finances"
+        title="Talk to a Business Accountant Today"
         sub="Request a free, no-commitment consultation. Tell us a little about your situation and we'll get back to you within business hours."
         crumbs={[{ label: 'Contact' }]}
       />

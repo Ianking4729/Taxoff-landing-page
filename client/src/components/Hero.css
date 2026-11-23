@@ -1,8 +1,7 @@
 .hero {
   position: relative;
-  height: 90vh;
-  min-height: 560px;
-  padding-top: var(--nav-height);
+  min-height: max(90vh, 600px);
+  padding-top: calc(var(--nav-height) + 56px);
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -41,13 +40,13 @@
   position: relative;
   z-index: 2;
   padding: 0 80px 64px;
-  max-width: 640px;
+  max-width: 860px;
   animation: fadeUp 0.9s ease both;
 }
 
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(36px, 5vw, 62px);
+  font-size: clamp(34px, 4vw, 54px);
   font-weight: 700;
   line-height: 1.12;
   color: white;

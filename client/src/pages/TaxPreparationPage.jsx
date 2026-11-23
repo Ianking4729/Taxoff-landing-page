@@ -3,11 +3,8 @@ import ServicePage from '../components/ServicePage'
 
 const data = {
   path: '/services/tax-preparation',
-  seoTitle: 'Tax Preparation Services for Individuals & Businesses',
-  seoDescription:
-    'Personal and business tax returns filed accurately and on time, plus proactive tax planning and sales tax filing. 100% remote. Starting at $200.',
   crumb: 'Tax Preparation',
-  title: 'Tax Preparation',
+  title: 'Tax Preparation Services for Individuals & Small Businesses',
   sub:
     'Personal and business tax returns filed accurately and on time, with every deduction and credit you are entitled to. Handled 100% online.',
   price: 'Starting at $200',
