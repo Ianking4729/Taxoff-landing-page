@@ -100,9 +100,8 @@ function Hero() {
 
       <div className="hero-content">
         <h1>
-          Your Finances,<br />
-          <em>Handled with</em><br />
-          Precision.
+          Small Business Accounting Services,{' '}
+          <em>Handled with Precision.</em>
         </h1>
         <p className="hero-sub">
           Cloud-based accounting and tax services for individuals and
