@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import './Services.css'
-import { BookOpen, FileText, Users, Settings, ArrowRight } from 'lucide-react'
+import { BookOpen, FileText, Users, Settings, ArrowRight, BadgeCheck } from 'lucide-react'
 
 const services = [
   {
@@ -19,6 +19,13 @@ const services = [
       "From reconciliations and AP/AR to reporting and cash flow, we handle all your bookkeeping needs to keep your finances current and organized—freeing you up to concentrate on growing your company. If you're behind, we'll clean up months or years of backlog and deliver accurate, up-to-date financials. Virtual and remote bookkeeping, trusted local expertise, QuickBooks and Xero certified pros, and strategic advising to drive growth.",
     price: 'Starting at $200/mo',
     link: '/services/bookkeeping-accounting',
+  },
+  {
+    icon: <BadgeCheck size={22} />,
+    title: 'QuickBooks & Xero ProAdvisor',
+    desc: 'QuickBooks Certified ProAdvisor and Xero Certified Advisor. We set up QuickBooks Online and Xero, migrate from QuickBooks Desktop, clean up messy files and train you to use them with confidence.',
+    price: 'Free consultation',
+    link: '/services/quickbooks-xero-proadvisor',
   },
   {
     icon: <FileText size={22} />,

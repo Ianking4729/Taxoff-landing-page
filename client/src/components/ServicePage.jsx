@@ -18,7 +18,7 @@ function ServicePage({ data }) {
         crumbs={[{ label: 'Services' }, { label: data.crumb }]}
       >
         <div className="page-header-meta">
-          <span className="price-chip">{data.price}</span>
+          {data.price && <span className="price-chip">{data.price}</span>}
           {data.badges.map((b) => (
             <span className="meta-item" key={b}><Check size={15} /> {b}</span>
           ))}
@@ -37,6 +37,11 @@ function ServicePage({ data }) {
           </div>
           <div className="intro-text">
             {data.intro.map((p, i) => <p key={i}>{p}</p>)}
+            {data.logos && (
+              <div className="intro-logos">
+                {data.logos.map((l) => <img key={l.alt} src={l.src} alt={l.alt} loading="lazy" />)}
+              </div>
+            )}
           </div>
         </div>
       </section>

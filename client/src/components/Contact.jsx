@@ -166,11 +166,11 @@ function Contact() {
             <select name="service" value={formData.service} onChange={handleChange} required>
               <option value="">Select a service...</option>
               <option>Bookkeeping</option>
+              <option>QuickBooks & Xero Setup / Migration</option>
               <option>Personal Tax Preparation</option>
               <option>Business Tax Preparation</option>
               <option>Sales Tax Setup & Filing</option>
               <option>Payroll Services</option>
-              <option>QuickBooks / Software Setup</option>
               <option>Financial Analysis & Reporting</option>
               <option>Other</option>
             </select>

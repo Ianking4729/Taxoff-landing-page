@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Footer.css'
-import logoRect from '../assets/taxoff-logo-new2.png'
+import logoRect from '../assets/taxoff-logo-2026-dark.png'
 
 function Footer() {
   return (
@@ -19,6 +19,7 @@ function Footer() {
         <div className="footer-col">
           <h4>Services</h4>
           <Link to="/services/bookkeeping-accounting">Bookkeeping &amp; Accounting</Link>
+          <Link to="/services/quickbooks-xero-proadvisor">QuickBooks &amp; Xero ProAdvisor</Link>
           <Link to="/services/bookkeeping-accounting#cleanup">Catch-Up Bookkeeping</Link>
           <Link to="/services/tax-preparation">Tax Preparation</Link>
           <Link to="/services/tax-preparation#sales-tax">Sales Tax Filing</Link>

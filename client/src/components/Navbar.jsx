@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { ChevronDown } from 'lucide-react'
 import './Navbar.css'
-import logoRect from '../assets/taxoff-logo-new.png'
+import logoRect from '../assets/taxoff-logo-2026.png'
 
 const TOPBAR_HEIGHT = 38
 
 const serviceLinks = [
   { to: '/services/bookkeeping-accounting', label: 'Bookkeeping & Accounting' },
+  { to: '/services/quickbooks-xero-proadvisor', label: 'QuickBooks & Xero ProAdvisor' },
   { to: '/services/tax-preparation', label: 'Tax Preparation' },
 ]
 
