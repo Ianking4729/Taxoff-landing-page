@@ -18,7 +18,9 @@
 }
 
 .nav-logo img {
-  height: 92px;
+  height: 60px;
+  width: auto;
+  display: block;
   object-fit: contain;
 }
 
@@ -75,7 +77,8 @@
   position: absolute;
   top: 100%;
   left: -20px;
-  min-width: 250px;
+  min-width: 270px;
+  white-space: nowrap;
   list-style: none;
   background: var(--white);
   border: 1px solid var(--mid-gray);

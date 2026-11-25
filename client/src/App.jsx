@@ -10,6 +10,7 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import BookkeepingPage from './pages/BookkeepingPage'
 import TaxPreparationPage from './pages/TaxPreparationPage'
+import QuickBooksXeroPage from './pages/QuickBooksXeroPage'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/services/bookkeeping-accounting" element={<BookkeepingPage />} />
+          <Route path="/services/quickbooks-xero-proadvisor" element={<QuickBooksXeroPage />} />
           <Route path="/services/tax-preparation" element={<TaxPreparationPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

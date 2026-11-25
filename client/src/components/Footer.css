@@ -14,7 +14,8 @@ footer {
 }
 
 .footer-brand img {
-  height: 40px;
+  height: 56px;
+  width: auto;
   object-fit: contain;
 
   margin-bottom: 16px;

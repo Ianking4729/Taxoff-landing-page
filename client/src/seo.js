@@ -16,6 +16,11 @@ export const pageSeo = {
     description:
       'Monthly virtual bookkeeping services for small business, startups, ecommerce and self-employed owners. QuickBooks & Xero certified. From $200/mo.',
   },
+  '/services/quickbooks-xero-proadvisor': {
+    title: 'QuickBooks ProAdvisor & Xero Advisor Services | Taxoff',
+    description:
+      'Certified QuickBooks ProAdvisor and Xero advisor: QuickBooks Online and Xero setup, Desktop to Online migration, cleanup and training. Charlotte NC & online.',
+  },
   '/services/tax-preparation': {
     title: 'Tax Preparation Services in Charlotte NC | Taxoff',
     description:

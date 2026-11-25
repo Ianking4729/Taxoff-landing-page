@@ -607,3 +607,17 @@ a.method-card:hover {
   .page-header-actions a,
   .cta-band-actions a { width: 100%; text-align: center; }
 }
+
+/* Certification badges under a service intro */
+.intro-logos {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.intro-logos img {
+  height: 92px;
+  width: auto;
+  object-fit: contain;
+}
